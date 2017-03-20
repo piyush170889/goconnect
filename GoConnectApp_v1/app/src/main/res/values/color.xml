@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_new">#4568B6</color>
+    <color name="actionbar">#5C86C5</color>
+    <color name="actionbarPrimaryDark">#3A5D9B</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="text_bg_color">#E6FFFFFF</color>
+    <color name="text_color">#ADADAD</color>
+    <color name="text_color_blue">#676767</color>
+    <color name="title_text_color">#0065AD</color>
+    <color name="button_bg">#3166c1</color>
+	<color name="bar_color_grey">#804C81A5</color>
+	<color name="progress_empty">#B4A49F</color>
+	<color name="progress_filled">#F65E3C</color>
+	<color name="events_list_grey">#555555</color>
+	<color name="button_red">#F55D3E</color>    
+	<color name="get_tickets_bottom_bar_orange">#AB4B04</color>
+	<color name="dasbord_color_1">#C9E7E5</color>
+    <color name="dasbord_color_opaque">#45C9E7E5</color>
+	<color name="dasbord_color_2">#5DC6CC</color>
+	<color name="dasbord_color_3">#52AEB4</color>	
+	<color name="dasbord_color_4">#219083</color>	
+	<color name="dasbord_color_5">#197065</color>	
+	<color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#F37A39</color>
+    <color name="orange_light">#78F37A39</color>
+    <color name="dialog_background">#55000000</color>
+    <color name="color_primary">#219083</color>	
+    <color name="color_green">#00BB00</color>	
+    <color name="color_gray">#808080</color>	
+    
+</resources>

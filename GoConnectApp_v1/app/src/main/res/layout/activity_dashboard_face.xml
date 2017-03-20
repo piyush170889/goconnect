@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/dasbord_color_1"
+        android:padding="6dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <com.goconnect.events.lib.CircularImageView
+                android:id="@+id/user_icon"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                 android:src="@drawable/defaultuser"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="top|right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Face"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txt_face_institution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Institution"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txt_face_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Topic"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/dasbord_color_2"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.goconnect.events.lib.CircularImageView
+                android:id="@+id/other_user_icon"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:onClick="showOtherUserBusinessCard"
+                android:gravity="center"
+                android:src="@drawable/defaultuser"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|right"
+            android:layout_weight="1"
+            android:gravity="top|right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="100m"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:alpha="0.4"
+        android:background="@color/dasbord_color_3"
+        android:gravity="top|right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="1km"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@color/dasbord_color_4"
+        android:gravity="top|right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="10km"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.6"
+        android:background="@color/dasbord_color_5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:text="Further"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.goconnect.events.lib.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:onClick="showOtherUserBusinessCard"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/defaultuser" />
+
+                <com.goconnect.events.lib.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:onClick="showOtherUserBusinessCard"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/defaultuser"  />
+
+                <com.goconnect.events.lib.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                     android:onClick="showOtherUserBusinessCard"
+                    android:scaleType="fitCenter"
+                     android:src="@drawable/defaultuser" />
+
+                <com.goconnect.events.lib.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:onClick="showOtherUserBusinessCard"
+                    android:scaleType="fitCenter"
+                   android:src="@drawable/defaultuser" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.goconnect.events.lib.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:onClick="showOtherUserBusinessCard"
+                    android:scaleType="fitCenter"
+                   android:src="@drawable/defaultuser"  />
+
+                <com.goconnect.events.lib.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:onClick="showOtherUserBusinessCard"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/defaultuser"  />
+
+                <com.goconnect.events.lib.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:onClick="showOtherUserBusinessCard"
+                    android:scaleType="fitCenter"
+                  android:src="@drawable/defaultuser"  />
+
+                <com.goconnect.events.lib.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:onClick="showOtherUserBusinessCard"
+                    android:scaleType="fitCenter"
+                     android:src="@drawable/defaultuser"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.goconnect.events.lib.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:onClick="showOtherUserBusinessCard"
+                    android:src="@drawable/defaultuser" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

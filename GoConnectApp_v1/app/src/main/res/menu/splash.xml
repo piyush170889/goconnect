@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:support="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.devjiva.goconnect.SplashActivity">
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share_white_24dp"
+        android:title="@string/share"
+        support:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/share_by_gmail"
+                android:icon="@drawable/gmail_icon"
+                android:title="Gmail" />
+        </menu>
+    </item>
+
+    <!--<item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_lock_open_white_24dp"
+        android:title="@string/action_logout"
+        app:showAsAction="always" />-->
+
+</menu>

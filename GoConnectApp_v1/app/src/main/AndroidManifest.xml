@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devjiva.goconnect"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gologoapp"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!--android:name=".GlobalClass"-->
+
+        <!-- android:requiredForAllUsers="false"
+         android:restoreAnyVersion="true"
+         android:extractNativeLibs="false"
+         android:hardwareAccelerated="false"-->
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="ShowWebUrlActivity"
+            android:permission="android.permission.ACCESS_CHECKIN_PROPERTIES"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="ProfileActivity"
+            android:configChanges="keyboard"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name="DashboardInstitution"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="MoreUsersActivityNew"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="DashboardTopic"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="SettingsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="BusinessCardOtherUserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialog"></activity>
+
+        <activity
+            android:name="BusinessCardUserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialog"></activity>
+
+        <activity
+            android:name=".LinkedInNewActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".UserProfile"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="MoreUsersActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <service
+            android:name=".locations.MyLocationUpdateServiceNew"
+            android:stopWithTask="false"></service>
+
+        <service android:name="com.goconnect.events.http.UpdateLocationIntentService"></service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

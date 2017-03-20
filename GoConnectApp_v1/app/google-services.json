@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1019855970950",
+    "project_id": "goconnectapp-1369"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019855970950:android:3fd551312ea70326",
+        "android_client_info": {
+          "package_name": "com.devjiva.goconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019855970950-doc7bj55hik93h0usq00kaqjk0vb1p9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devjiva.goconnect",
+            "certificate_hash": "3981CEA332BEEC15CDE0F256D0547CF55303432C"
+          }
+        },
+        {
+          "client_id": "1019855970950-7mjngaml37j7tvdvnmccjnpo7voba6pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0UdgwkZFrcvF8TjHD7U8XdWb0VJ7YEYI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
